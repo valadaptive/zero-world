@@ -50,10 +50,10 @@ jobs:
 
       - name: Display structure of downloaded files
         run: ls -l
-        working-directory: ./artifacts
+        working-directory: ./artifacts/Artifacts
 
       - name: Create release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "./artifacts/zero-world-*.jar"
+          artifacts: "./artifacts/Artifacts/zero-world-*.jar"
           draft: true
