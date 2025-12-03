@@ -16,11 +16,11 @@ jobs:
         uses: gradle/actions/wrapper-validation@v4
       - name: setup jdk
         uses: actions/setup-java@v4
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v5
         with:
           java-version: '21'
           distribution: 'microsoft'
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v5
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
       - name: build
