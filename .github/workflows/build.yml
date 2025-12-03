@@ -30,3 +30,30 @@ jobs:
         with:
           name: Artifacts
           path: build/libs/
+
+  release:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    needs:
+      - build
+    if: ${{ github.ref_type == 'tag' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: ./artifacts
+
+      - name: Display structure of downloaded files
+        run: ls -l
+        working-directory: ./artifacts
+
+      - name: Create release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "./artifacts/zero-world-*.jar"
+          draft: true
