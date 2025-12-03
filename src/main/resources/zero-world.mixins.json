@@ -9,6 +9,7 @@
     "MineShaftCrossingDiamondOreMixin",
     "NaturalSpawnerFixupMixin",
     "SingleThreadedRandomMixin",
+    "StrongholdStructureFixupMixin",
     "ThreadSafeLegacyRandomMixin",
     "UUIDFixupMixin",
     "Xoroshiro128PlusPlusMixin",
