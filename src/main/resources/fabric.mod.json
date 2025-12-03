@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "zero-world",
+	"version": "${version}",
+	"name": "Zero World",
+	"description": "Removes as much RNG from Minecraft as possible.",
+	"authors": [
+		"valadaptive"
+	],
+	"contact": {
+		"homepage": "https://github.com/valadaptive/zero-world",
+		"sources": "https://github.com/valadaptive/zero-world"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/zero-world/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"wtf.vala.zeroworld.ZeroWorld"
+		],
+		"client": [
+			"wtf.vala.zeroworld.ZeroWorldClient"
+		]
+	},
+	"mixins": [
+		"zero-world.mixins.json",
+		{
+			"config": "zero-world.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"accessWidener": "zero-world.classtweaker"
+}

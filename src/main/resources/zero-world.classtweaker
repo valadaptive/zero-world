@@ -1,0 +1,7 @@
+classTweaker v1 named
+
+accessible field com/mojang/blaze3d/vertex/BufferBuilder vertices I
+accessible method net/minecraft/world/level/NaturalSpawner getTopNonCollidingPos (Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/world/entity/EntityType;II)Lnet/minecraft/core/BlockPos;
+accessible method net/minecraft/world/level/biome/MobSpawnSettings <init> (FLjava/util/Map;Ljava/util/Map;)V
+accessible field net/minecraft/world/level/biome/MobSpawnSettings spawners Ljava/util/Map;
+accessible field net/minecraft/world/level/biome/MobSpawnSettings mobSpawnCosts Ljava/util/Map;

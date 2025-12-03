@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "wtf.vala.zeroworld.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "SkyRendererFixupMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
