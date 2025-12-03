@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "zero-world",
-	"version": "0.1",
+	"version": "${version}",
 	"name": "Zero World",
 	"description": "Removes as much RNG from Minecraft as possible.",
 	"authors": [
